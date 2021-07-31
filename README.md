@@ -1,4 +1,6 @@
 # weather-app
+[View demo](https://yuejiahz.github.io/weather-app/)
+
 Weather app that displays weather info by city. This is created to practice fetch API and promises.
 
 Features
