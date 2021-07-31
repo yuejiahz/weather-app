@@ -1,5 +1,10 @@
 # weather-app
-Weather app that displays weather info by city. This is created to practice API, promises, async and await.
+Weather app that displays weather info by city. This is created to practice fetch API and promises.
 
-Status: Ongoing project
+Features
+* Search city from search bar
+* Displays weather status, weather icon, average temperature, the temperature feels on skin, max temperature, min temperature, sunrise time, sunset time, humidity, and wind speed.
+* Background changes to daytime or night time according to current time of the city
 
+API source
+* openweathermap.org
