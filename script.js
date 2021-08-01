@@ -21,7 +21,6 @@ window.addEventListener('load', getWeather);
 async function getWeather() {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=522d55a60d2bd49455bcaca58f801f97`, { type: "cors" });
-        console.log(response);
         if (response.ok) {
             response.json().then(function (response) {
                 let cityTime = getCityCurrentTime(response.timezone);
