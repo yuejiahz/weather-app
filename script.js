@@ -20,8 +20,8 @@ submit.addEventListener('click', getWeather);
 window.addEventListener('load', getWeather);
 
 async function getWeather() {
-    const response = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=522d55a60d2bd49455bcaca58f801f97`);
-    response.then(function (response) {
+    const response = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=522d55a60d2bd49455bcaca58f801f97`,{type:"cors"});
+    response.then(function(response){
         return response.json();
     })
         .then(function (response) {
@@ -38,7 +38,7 @@ async function getWeather() {
             sunset.innerHTML = 'sunset ' + unixToTimeStamp(response.sys.sunset);
             humid.innerHTML = 'humidity : ' + response.main.humidity + ' %';
             windSpeed.innerHTML = 'wind speed : ' + response.wind.speed + ' m/s';
-        });
+        })
 }
 
 function cityCurrentTime(timezone) {
