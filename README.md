@@ -3,6 +3,10 @@
 
 Weather app that displays weather info by city. This is created to practice fetch API, promises, async function and await, handling error using try..catch in async, handling error 404.
 
+![daytime-demo](https://github.com/yuejiahz/weather-app/blob/main/img/demo-day.png)
+
+![demo-nighttime](https://github.com/yuejiahz/weather-app/blob/main/img/demo-night.png)
+
 ## Features
 * Search city from search bar
 * Displays weather status, weather icon, average temperature, the temperature feels on skin, max temperature, min temperature, sunrise time, sunset time, humidity, and wind speed.
